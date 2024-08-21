@@ -1,0 +1,112 @@
+/* App.css */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+button,
+select {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+select:disabled,
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.non-grid {
+  background-color: lightgray;
+  padding: 0 20px;
+  width: 33.25%;
+}
+
+/* Flexbox container for grid and metrics */
+.container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Container for the grid with black border */
+.grid-container {
+  display: inline-block;
+  border: 2px solid black; /* Black border around the entire grid */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+}
+
+/* Flexbox container for the grid rows */
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-row {
+  display: flex;
+}
+
+/* Node styling */
+.node {
+  width: 25px; /* Adjust width as needed */
+  height: 25px; /* Adjust height as needed */
+  box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+  cursor: pointer;
+  /* Remove the border around individual nodes */
+  border: none;
+}
+
+.node.start {
+  background-color: green;
+}
+
+.node.end {
+  background-color: red;
+}
+
+.node.visited {
+  background-color: lightblue;
+}
+
+.node.path {
+  background-color: lightgoldenrodyellow;
+}
+
+.node.wall {
+  background-color: rgb(29, 10, 106);
+}
+
+.metrics {
+  padding: 0px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  text-align: left;
+}
+
+.metrics h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.metrics-area {
+  display: flex;
+}
+
+.metrics p {
+  font-size: 16px;
+  color: #555;
+  padding: 0 5px;
+}
+
+.metrics p span {
+  font-weight: bold;
+  color: #000;
+}
